@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.17/fabric.min.js"></script>
+   <script src="https://unpkg.com/vue"></script>
+   <script src="/dev/js/main.js"></script>
+   <link rel="stylesheet" href="/dev/style/main.css">
+   <title>ImageEditor</title>
+</head>
+<body>
+<div id="imageEditor" class="imageEditor">
+   <div id="uploadForm" class="imageEditor__uploadForm">
+      <input type="file" id="fileInput" @change="onFileChange">
+   </div>
+   <canvas id="canvas"></canvas>
+   <img id="sourceImage" :src="sourceImage">
+</div>
+</body>
+</html>

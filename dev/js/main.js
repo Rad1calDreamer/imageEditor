@@ -3,7 +3,9 @@ window.onload = function() {
       el: '#imageEditor',
       data: {
          sourceImage: '',
-         canvas: null
+         canvas: null,
+         width: 300,
+         height: 150
       },
       methods: {
          onFileChange: function(e) {
@@ -14,10 +16,13 @@ window.onload = function() {
             this.createImage(files[0]);
          },
          loadCanvas: function() {
-            this.canvas = new fabric.Canvas(document.getElementById('canvas'), {});
+            this.canvas = new fabric.Canvas(document.getElementById('canvas'), {
+               width: this.width,
+               height: this.height
+            });
             var bg = new fabric.Image(document.getElementById('sourceImage'), {
-               width: 300,
-               height: 150
+               width: this.width,
+               height: this.height
             });
             this.canvas.add(bg).renderAll();
          },
@@ -27,13 +32,26 @@ window.onload = function() {
             var vm = this;
 
             reader.onload = function(e) {
-               vm.sourceImage = e.target.result;
-               vm.loadCanvas();
+               image.onload = function() {
+                  vm.width = this.naturalWidth;
+                  vm.height = this.naturalHeight;
+                  vm.loadCanvas();
+               };
+               vm.sourceImage = image.src = e.target.result;
             };
             reader.readAsDataURL(file);
          },
          removeImage: function(e) {
             this.sourceImage = '';
+         },
+         saveImage: function() {
+            if (!this.canvas) {
+               return;
+            }
+            this.canvas.lowerCanvasEl.toBlob(function(blob) {
+               saveAs(blob, 'pretty image.png');
+            });
+
          }
       }
    });

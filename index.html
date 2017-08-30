@@ -3,6 +3,8 @@
 <head>
    <meta charset="UTF-8">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.17/fabric.min.js"></script>
+   <script src="/libs/canvas-toBlob.js"></script>
+   <script src="/libs/FileSaver.min.js"></script>
    <script src="https://unpkg.com/vue"></script>
    <script src="/dev/js/main.js"></script>
    <link rel="stylesheet" href="/dev/style/main.css">
@@ -12,6 +14,7 @@
 <div id="imageEditor" class="imageEditor">
    <div id="uploadForm" class="imageEditor__uploadForm">
       <input type="file" id="fileInput" @change="onFileChange">
+      <input type="button" id="saveImage" @click="saveImage" value="save">
    </div>
    <canvas id="canvas"></canvas>
    <img id="sourceImage" :src="sourceImage">

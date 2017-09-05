@@ -8,16 +8,26 @@
    <script src="https://unpkg.com/vue"></script>
    <script src="/dev/js/main.js"></script>
    <link rel="stylesheet" href="/dev/style/main.css">
+   <link rel="stylesheet" href="/dev/style/fonts/style.css">
    <title>ImageEditor</title>
 </head>
 <body>
-<div id="imageEditor" class="imageEditor">
-   <div id="uploadForm" class="imageEditor__uploadForm">
-      <input type="file" id="fileInput" @change="onFileChange">
-      <input type="button" id="saveImage" @click="saveImage" value="save">
+<div class="workSpace">
+   <div id="commandPanel" class="commandPanel">
+      <div v-for="tool in tools" v-bind:class="tool.icon" v-bind:title="tool.title"></div>
    </div>
-   <canvas id="canvas"></canvas>
-   <img id="sourceImage" :src="sourceImage">
+
+   <div id="imageEditor" class="imageEditor">
+      <div id="uploadForm" class="imageEditor__uploadForm">
+         <input type="file" id="fileInput" @change="onFileChange">
+         <input type="button" id="saveImage" @click="saveImage" value="save">
+      </div>
+      <div class="imageEditor__canvasContainer">
+         <canvas id="canvas"></canvas>
+      </div>
+      <img id="sourceImage" :src="sourceImage">
+   </div>
+
 </div>
 </body>
 </html>

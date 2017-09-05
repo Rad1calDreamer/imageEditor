@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?aznx0m');
+  src: url('/fonts/icomoon.eot?aznx0m#iefix') format('embedded-opentype'), url('/fonts/icomoon.ttf?aznx0m') format('truetype'), url('/fonts/icomoon.woff?aznx0m') format('woff'), url('/fonts/icomoon.svg?aznx0m#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-pencil2:before {
+  content: "\e906";
+}
+.icon-droplet:before {
+  content: "\e90b";
+}
+.icon-undo:before {
+  content: "\e965";
+}
+.icon-redo:before {
+  content: "\e966";
+}
+.icon-spinner11:before {
+  content: "\e984";
+}
+.icon-zoom-in:before {
+  content: "\e987";
+}
+.icon-zoom-out:before {
+  content: "\e988";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-minus:before {
+  content: "\ea0b";
+}
+.icon-arrow-up-right2:before {
+  content: "\ea3b";
+}
+.icon-checkbox-unchecked:before {
+  content: "\ea53";
+}
+.icon-crop:before {
+  content: "\ea57";
+}
+.icon-scissors:before {
+  content: "\ea5a";
+}
+.icon-font-size:before {
+  content: "\ea61";
+}
+.icon-bold:before {
+  content: "\ea62";
+}
+.icon-underline:before {
+  content: "\ea63";
+}
+.icon-italic:before {
+  content: "\ea64";
+}
+.icon-strikethrough:before {
+  content: "\ea65";
+}
+.icon-text-color:before {
+  content: "\ea6d";
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmxlc3MiLCI8aW5wdXQgY3NzIDE+Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsdUJBQUE7RUFDQSxzQ0FBQTtFQUNBLHVPQUFBO0VBSUEsb0JBQUE7RUFDQSxtQkFBQTtDQ0pEO0FET0Q7RUNMRSxnRkFBZ0Y7RURPaEYsa0NBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxvQkFBQTtFQUNBLHFCQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0VDTEEsdUNBQXVDO0VEUXZDLG9DQUFBO0VBQ0EsbUNBQUE7Q0NORDtBRFVDO0VBQ0UsaUJBQUE7Q0NSSDtBRFlDO0VBQ0UsaUJBQUE7Q0NWSDtBRGNDO0VBQ0UsaUJBQUE7Q0NaSDtBRGdCQztFQUNFLGlCQUFBO0NDZEg7QURrQkM7RUFDRSxpQkFBQTtDQ2hCSDtBRG9CQztFQUNFLGlCQUFBO0NDbEJIO0FEc0JDO0VBQ0UsaUJBQUE7Q0NwQkg7QUR3QkM7RUFDRSxpQkFBQTtDQ3RCSDtBRDBCQztFQUNFLGlCQUFBO0NDeEJIO0FENEJDO0VBQ0UsaUJBQUE7Q0MxQkg7QUQ4QkM7RUFDRSxpQkFBQTtDQzVCSDtBRGdDQztFQUNFLGlCQUFBO0NDOUJIO0FEa0NDO0VBQ0UsaUJBQUE7Q0NoQ0g7QURvQ0M7RUFDRSxpQkFBQTtDQ2xDSDtBRHNDQztFQUNFLGlCQUFBO0NDcENIO0FEd0NDO0VBQ0UsaUJBQUE7Q0N0Q0g7QUQwQ0M7RUFDRSxpQkFBQTtDQ3hDSDtBRDRDQztFQUNFLGlCQUFBO0NDMUNIO0FEOENDO0VBQ0UsaUJBQUE7Q0M1Q0giLCJmaWxlIjoidG8uY3NzIn0= */

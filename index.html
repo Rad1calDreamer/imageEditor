@@ -14,10 +14,9 @@
 <body>
 <div class="workSpace">
    <div id="commandPanel" class="commandPanel">
-      <div v-for="tool in tools" v-bind:class="tool.icon" v-bind:title="tool.title"></div>
+      <div v-for="tool in tools" v-bind:class="tool.icon" v-bind:title="tool.title" @click="toolClick(tool.title,true)"></div>
    </div>
-
-   <div id="imageEditor" class="imageEditor">
+   <div id="imageEditor" class="imageEditor" v-on:onToolClick=onToolClick>
       <div id="uploadForm" class="imageEditor__uploadForm">
          <input type="file" id="fileInput" @change="onFileChange">
          <input type="button" id="saveImage" @click="saveImage" value="save">

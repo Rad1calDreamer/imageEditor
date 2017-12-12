@@ -45,6 +45,14 @@
             background: darken(@lightPrimaryColor, 23%);
             color: @textPrimaryColor;
          }
+         &.active {
+            background: @textPrimaryColor;
+            &:hover {
+               cursor: pointer;
+               background: darken(@lightPrimaryColor, 10%);
+               color: darken(@primaryColor, 10%);
+            }
+         }
       }
    }
    /*endregion*/

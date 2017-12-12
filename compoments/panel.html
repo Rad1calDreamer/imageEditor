@@ -1,0 +1,3 @@
+<div id="commandPanel" class="commandPanel">
+   <div v-for="tool in tools" v-bind:class="tool.icon" v-bind:title="tool.title" @click="toolClick(tool.title,true)"></div>
+</div>
